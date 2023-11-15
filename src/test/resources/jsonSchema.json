@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome10",
+    "definitions": {
+        "Welcome10": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "people": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Person"
+                    }
+                }
+            },
+            "required": [
+                "people"
+            ],
+            "title": "Welcome10"
+        },
+        "Person": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "age": {
+                    "type": "integer"
+                },
+                "number": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "age",
+                "firstName",
+                "gender",
+                "lastName",
+                "number"
+            ],
+            "title": "Person"
+        }
+    }
+}
